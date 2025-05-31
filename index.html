@@ -17,6 +17,10 @@
     <meta property="og:description" content="Discover the best Telegram search engine to find groups and channels on any topic. TG Compass helps you navigate thousands of Telegram communities easily.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://tgcompass.com/">
+    <meta property="og:image" content="https://tgcompass.com/tgcompass-homepage.webp">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="400">
+    <meta property="og:image:alt" content="TG Compass - Telegram Search Engine Homepage">
     <meta property="og:site_name" content="TG Compass">
     <meta property="og:locale" content="en_US">
     <meta property="article:author" content="TG Compass Guide">
@@ -31,7 +35,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Best Telegram Search Engine 2025 | Find Groups & Channels with TG Compass">
     <meta name="twitter:description" content="Discover the best Telegram search engine to find groups and channels on any topic. TG Compass helps you navigate thousands of Telegram communities easily.">
-    <meta name="twitter:creator" content="@tgcompass">
+    <meta name="twitter:image" content="https://tgcompass.com/tgcompass-homepage.webp">
+    <meta name="twitter:image:alt" content="TG Compass - Telegram Search Engine Homepage">
+    <meta name="twitter:creator" content="@tgcompass">>
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://tgcompass.com/telegram-search-engine-guide">
@@ -86,16 +92,32 @@
             width: 100%;
             max-width: 800px;
             height: 400px;
-            background-color: #e9ecef;
-            border: 2px dashed #6c757d;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             margin-bottom: 30px;
             border-radius: 8px;
-            font-size: 18px;
-            color: #6c757d;
-            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .feature-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .feature-image img:hover {
+            transform: scale(1.02);
+        }
+        /* Responsive image dimensions */
+        @media (max-width: 768px) {
+            .feature-image {
+                height: 250px;
+            }
+        }
+        @media (max-width: 480px) {
+            .feature-image {
+                height: 200px;
+            }
         }
         header h1 {
             color: #2c3e50;
@@ -201,9 +223,9 @@
 </head>
 <body>
     <div class="container">
-        <!-- Feature Image Placeholder -->
+        <!-- Feature Image -->
         <div class="feature-image">
-            <img src="tgcompass-homepage.webp" alt="TG Compass Home Page">
+            <img src="tgcompass-homepage.webp" alt="TG Compass - Best Telegram Search Engine to Find Groups and Channels" width="800" height="400" loading="eager">
         </div>
 
         <header>
